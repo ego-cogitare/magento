@@ -1,5 +1,22 @@
-
-
 header {
   background-color: $brand-color;
+  height: 188px;
+
+  .logo-wrapper {
+    width: 270px;
+    height: 100%;
+    background-color: $gray-color;
+    text-align: center;
+
+    a {
+      display: block;
+      margin-top: 36px;
+    }
+  }
+
+  .content-wrapper {
+    width: 900px;
+    height: 100%;
+    background: url('../img/header-bg.png') no-repeat 0 0;
+  }
 }
