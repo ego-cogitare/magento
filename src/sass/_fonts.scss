@@ -1,0 +1,25 @@
+
+$ffBold: 'AdiHausPS Bold';
+$ffReg: 'AdiHausPS Regular';
+$ffItalic: 'AdiHausPS Italic';
+$ffIcons: 'Icons';
+
+@font-face {
+    font-family: $ffBold;
+    src: url(../fonts/adihdb-webfont.ttf);
+}
+
+@font-face {
+    font-family: $ffReg;
+    src: url(../fonts/adihrg-webfont.ttf);
+}
+
+@font-face {
+    font-family: $ffItalic;
+    src: url(../fonts/adihrgit-webfont.ttf);
+}
+
+@font-face {
+    font-family: $ffIcons;
+    src: url(../fonts/icons.ttf);
+}
