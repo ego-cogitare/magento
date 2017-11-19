@@ -18,7 +18,7 @@ header {
     width: 900px;
     height: 100%;
     background: url('../img/header-bg.png') no-repeat 0 0;
-    padding: 18px 0 0 24px;
+    padding: 18px 0 0 28px;
 
     .general {
       color: #ffffff;
@@ -91,5 +91,76 @@ header {
         }
       }
     }
+
+    .search {
+
+      .input {
+        @extend .input;
+        width: 540px;
+      }
+
+      .btn {
+        @extend .btn;
+        width: 62px;
+        background-color: rgba(139, 161, 6, 0.7);
+
+        &:hover {
+          color: #ff0;
+        }
+      }
+    }
+
+    .social-login {
+      color: #ffffff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding-top: 30px;
+
+      .fa-facebook-official {
+        font-size: 1.6rem;
+        vertical-align: middle;
+      }
+    }
+
+    .search-cart {
+      padding-top: 50px;
+
+      .cart {
+        color: #ffffff;
+        position: relative;
+        padding-left: 30px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        padding-top: 12px;
+
+        &:before {
+          font-family: 'FontAwesome';
+          position: absolute;
+          display: block;
+          content: "\f07a";
+          left: -10px;
+          font-size: 2rem;
+          top: 5px;
+        }
+
+        .products {
+          position: relative;
+          width: 30px;
+          height: 30px;
+          background-color: #ffffff;
+          color: $dark-green-color;
+          border-radius: 50%;
+          text-align: center;
+          padding-top: 5px;
+          margin-top: -5px;
+          margin-right: 8px;
+        }
+
+        .price {
+          padding-right: 16px;
+        }
+      }
+    }
+
   }
 }

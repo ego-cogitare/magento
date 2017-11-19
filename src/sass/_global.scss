@@ -39,6 +39,28 @@ body {
   background-color: $body-bg-color;
 }
 
+.input {
+  height: 42px;
+  border: none;
+  background-color: #ffffff;
+  outline: none;
+  color: $dark-green-color;
+  padding: 0 20px;
+}
+
+.btn {
+  background: none;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  height: 42px;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: $dark-green-color;
+}
+
 .wrapper {
   width: 1170px;
   margin: 0 auto;
@@ -54,6 +76,7 @@ body {
   font-size: 0.92rem;
   box-shadow: rgb(153, 153, 153) 0px 2px 5px 0px;
   position: relative;
+  background-color: $gray-color;
 
   i {
     font-weight: bold;
