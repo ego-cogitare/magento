@@ -76,13 +76,18 @@ gulp.task('fonts', function () {
         .pipe(gulp.dest('./build/fonts'));
 });
 
+gulp.task('css', function () {
+    return gulp.src('./src/css/**/*')
+        .pipe(gulp.dest('./build/css'));
+});
+
 gulp.task('images:dev', function () {
     return gulp.src('./src/img/**/*')
         .pipe(gulp.dest('./build/img'));
 });
 
-gulp.task('dev', ['fonts', 'images:dev', 'sass:dev', 'js', 'handlebars']);
+gulp.task('dev', ['fonts', 'images:dev', 'sass:dev', 'css', 'js', 'handlebars']);
 
 gulp.task('watch', ['dev', 'handlebars:watch', 'sass:watch', 'js:watch']);
 
-gulp.task('default', ['fonts', 'images:prod', 'js', 'sass:prod', 'handlebars']);
+gulp.task('default', ['fonts', 'images:prod', 'js', 'sass:prod', 'css', 'handlebars']);
