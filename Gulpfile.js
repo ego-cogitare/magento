@@ -56,9 +56,9 @@ gulp.task('clean', function () {
 
 
 gulp.task('images:prod', () =>
-	gulp.src('src/img/*')
+	gulp.src('./src/img/**/*')
 		.pipe(imagemin())
-		.pipe(gulp.dest('build/img'))
+		.pipe(gulp.dest('./build/img'))
 );
 
 gulp.task('js', () =>
@@ -77,7 +77,7 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('images:dev', function () {
-    return gulp.src('./src/img/*.*')
+    return gulp.src('./src/img/**/*')
         .pipe(gulp.dest('./build/img'));
 });
 

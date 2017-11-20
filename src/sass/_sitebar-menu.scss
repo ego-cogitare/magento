@@ -1,0 +1,88 @@
+.sitebar {
+  &.homepage {
+    background: #ffffff url('../img/sitebar-menu-home-bg.png') no-repeat center bottom;
+  }
+
+  padding: 30px 20px;
+  color: $gray-color;
+
+  & > .menu {
+    width: 100%;
+    list-style-type: none;
+
+    span {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #9a9a69;
+    }
+
+    a {
+      text-decoration: none;
+      color: #7f7f7f;
+      font-weight: 600;
+
+      &:hover {
+        color: $dark-green-color;
+      }
+    }
+
+    & > li.menu-item {
+      margin-top: 28px;
+      position: relative;
+
+      &:first-child {
+        margin-top: 0px;
+      }
+
+      &:after {
+        position: absolute;
+        display: block;
+        content: '\f107';
+        font-family: 'FontAwesome';
+        top: 0;
+        right: 0;
+        color: #7f7f7f;
+        text-align: center;
+        transition: all 0.3s 0s;
+      }
+
+      &.opened:after {
+        transform: rotate(180deg);
+      }
+
+      &[class*=' icon-']:after {
+        content: '';
+        background-repeat: no-repeat;
+        background-position: center center;
+        transform: none;
+        width: 27px;
+        height: 27px;
+        right: -9px;
+        font-size: 1.3rem;
+      }
+
+      &.icon-menu:after {
+        content: '\f0c9';
+        color: #9a9a69;
+      }
+
+      &.icon-new:after {
+        background-image: url('../img/icons/icon-new.png');
+      }
+
+      &.icon-percent:after {
+        background-image: url('../img/icons/icon-percent.png');
+      }
+
+      & > ul.submenu {
+        display: none;
+        list-style-type: none;
+        margin-top: 5px;
+
+        a {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
