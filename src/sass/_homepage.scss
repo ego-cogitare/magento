@@ -131,11 +131,13 @@
   }
 }
 
-
-
 .home-slider {
   .swiper-container {
     height: 534px;
+
+    ul {
+      list-style-type: none;
+    }
   }
 }
 

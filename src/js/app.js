@@ -5,6 +5,20 @@ $(document).ready(function() {
     $(this).toggleClass('opened').find('.submenu').slideToggle();
   });
 
+  $('.main-menu .menu-item').hover(
+    function() {
+      var $submenu = $(this).find('.submenu')
+        , offset =$(this).offset();
+
+      if (offset.left + $submenu.width() + 68 > $(window).width()) {
+        $(this).addClass('justify-right');
+      }
+    },
+    function() {
+      $('.main-menu .menu-item').removeClass('justify-right');
+    }
+  );
+
   new Swiper('#home-slider-1', {
     direction: 'horizontal',
     slidesPerView: 1,
