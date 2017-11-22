@@ -107,4 +107,18 @@ body {
     font-weight: bold;
     text-decoration: italic;
   }
+
+  .close {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+    text-transform: none;
+    font-size: 0.7rem;
+
+    span {
+      color: #3a3a3a;
+      margin-right: 5px;
+    }
+  }
 }
