@@ -4,6 +4,28 @@
   margin: 0;
 }
 
+body {
+  padding-top: 312px;
+  &.small {
+    padding-top: 256px;
+  }
+}
+
+.holder {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
+
+  header,
+  header *,
+  & > .menu-wrapper .main-menu,
+  & > .menu-wrapper .main-menu > ul > li > a {
+    transition: all 0.3s 0s;
+  }
+}
+
 .left {
   float: left;
 }

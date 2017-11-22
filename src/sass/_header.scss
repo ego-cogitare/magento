@@ -11,6 +11,9 @@ header {
     a {
       display: block;
       margin-top: 36px;
+      img {
+        width: 209px;
+      }
     }
   }
 
@@ -74,36 +77,40 @@ header {
 
           &:last-child {
             margin-right: 0;
-
             &:after {
               display: none;
             }
           }
-
           a {
             color: inherit;
             text-decoration: none;
-
             &:hover {
               text-decoration: underline;
             }
           }
         }
       }
+
+      .ico-facebook {
+        font-size: 24px;
+        margin-top: -8px;
+        margin-left: 30px;
+        opacity: 0;
+        a {
+          color: inherit;
+        }
+      }
     }
 
     .search {
-
       .input {
         @extend .input;
         width: 540px;
       }
-
       .btn {
         @extend .btn;
         width: 62px;
         background-color: rgba(139, 161, 6, 0.7);
-
         &:hover {
           color: #ff0;
         }
@@ -115,7 +122,8 @@ header {
       font-size: 0.9rem;
       font-weight: 600;
       padding-top: 30px;
-
+      height: 45px;
+      opacity: 1;
       .fa-facebook-official {
         font-size: 1.6rem;
         vertical-align: middle;
@@ -123,8 +131,7 @@ header {
     }
 
     .search-cart {
-      padding-top: 50px;
-
+      padding-top: 42px;
       .cart {
         color: #ffffff;
         position: relative;
@@ -132,7 +139,6 @@ header {
         font-size: 1.3rem;
         font-weight: 500;
         padding-top: 12px;
-
         &:before {
           font-family: 'FontAwesome';
           position: absolute;
@@ -142,7 +148,6 @@ header {
           font-size: 2rem;
           top: 5px;
         }
-
         .products {
           position: relative;
           width: 30px;
@@ -155,12 +160,38 @@ header {
           margin-top: -5px;
           margin-right: 8px;
         }
-
         .price {
           padding-right: 16px;
         }
       }
     }
+  }
+}
 
+.small {
+  header {
+    height: 112px;
+    .logo-wrapper {
+      a {
+        margin-top: 12px;
+        img {
+          width: 157px;
+        }
+      }
+    }
+    .content-wrapper {
+      .social-login {
+        opacity: 0;
+        padding-top: 0;
+        height: 0;
+      }
+      .general .ico-facebook {
+        opacity: 1;
+        transition-delay: 0.2s;
+      }
+    }
+    .search-cart {
+      padding-top: 12px;
+    }
   }
 }

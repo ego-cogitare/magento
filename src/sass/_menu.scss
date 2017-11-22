@@ -1,11 +1,9 @@
 .menu-wrapper {
   background-color: $gray-color;
+  box-shadow: #999999 0px 2px 5px 0px;
 
   .main-menu {
     height: 80px;
-    line-height: 80px;
-    color: #86837a;
-    font-size: 1.3rem;
     padding: 0 20px;
 
     & > ul {
@@ -38,7 +36,6 @@
           -webkit-column-rule: 1px outset #eeeeee;
           -moz-column-rule: 1px outset #eeeeee;
           column-rule: 1px outset #eeeeee;
-          // box-shadow: $gray-color 6px 5px 0px 0px;
           box-shadow: $gray-color 0 0 1px 7px;
           transform: translateX(-9999px);
           z-index: 999;
@@ -48,7 +45,6 @@
           li {
             display: block;
             white-space: nowrap;
-            line-height: 18px;
 
             span {
               display: block;
@@ -59,15 +55,15 @@
               margin-bottom: 10px;
             }
 
-            a {
+            & > a {
               color: #636363;
               font-size: 0.95rem;
               font-weight: 500;
+              line-height: 18px;
 
               &:hover {
                 color: #8ba106;
               }
-
               &:after {
                 content: '';
               }
@@ -97,6 +93,9 @@
           text-decoration: none;
           position: relative;
           display: block;
+          line-height: 80px;
+          color: #86837a;
+          font-size: 1.3rem;
         }
 
         &:hover {
@@ -122,6 +121,18 @@
             font-weight: normal;
           }
         }
+      }
+    }
+  }
+}
+
+.small {
+  .menu-wrapper {
+    .main-menu {
+      height: 45px;
+      & > ul > li > a {
+        line-height: 45px;
+        font-size: 1.1rem;
       }
     }
   }

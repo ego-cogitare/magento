@@ -1,7 +1,6 @@
 $(document).ready(function() {
   $('.sitebar .menu-item').on('click', function(e) {
     e.preventDefault();
-
     $(this).toggleClass('opened').find('.submenu').slideToggle();
   });
 
@@ -42,4 +41,9 @@ $(document).ready(function() {
     prevButton: '#home-slider-2 .button-prev'
   });
 
+  $(window).bind('scroll', function(e) {
+    $(window).scrollTop() > 50
+      ? $('body').addClass('small')
+      : $('body').removeClass('small');
+  });
 });
