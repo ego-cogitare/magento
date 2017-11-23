@@ -40,6 +40,10 @@ body {
   display: block;
 }
 
+.no-bg {
+  background: none !important;
+}
+
 .w50p {
   width: 50% !important;
 }
@@ -50,6 +54,17 @@ body {
 
 .h100p {
   height: 100%;
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  color: #707070;
+}
+
+.gray-border {
+  border: 1px solid #e1e1d2;
 }
 
 .text-center {
@@ -96,6 +111,23 @@ body {
   cursor: pointer;
   font-family: 'Montserrat';
   text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+.btn-green {
+  @extend .btn;
+  font-size: 0.9rem;
+  font-weight: 800;
+  height: 37px;
+  line-height: 37px;
+  background-color: #bad324;
+}
+
+.btn-brown {
+  @extend .btn-green;
+  background-color: #9a9a69;
 }
 
 ::placeholder {
