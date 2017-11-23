@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Magento</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/app.js" defer></script>
+  <head>
+
+  <body>
+    <div class="holder">
+      {{> notification }}
+      {{> header }}
+      {{> menu }}
+    </div>
+
+    <main>
+      <section>
+        <div class="wrapper">
+          <div class="registration">
+            <div class="login-form block">
+              <div class="heading-1">
+                Anmeldung
+              </div>
+              <div class="text clear">
+                <div class="left">
+                  Melden Sie sich in lhrem Kundenkonto an.
+                </div>
+                <div class="right">
+                  <span>*</span> Pflichtfelder
+                </div>
+              </div>
+              <form action="" method="post">
+                <div class="row">
+                  <input type="text" name="username" class="input" placeholder="Username oder E-Mail Adresse *" value="" required />
+                </div>
+                <div class="row">
+                  <input type="password" name="password" class="input" placeholder="Ihr Passwort *" value="" required />
+                </div>
+                <div class="row remember-me clear">
+                  <div class="left">
+                    <input type="checkbox" id="remember-me" name="password" />
+                    <label for="remember-me">angemeldet bleiben</label>
+                  </div>
+                  <div class="right">
+                    <a href="#">Passwort vergessen?</a>
+                  </div>
+                </div>
+                <div class="row">
+                  <button type="submit" class="btn">anmelden (login)</button>
+                </div>
+              </form>
+            </div>
+            <div class="registration-form block">
+              <div class="heading-1 text-center">
+                Registrierung
+              </div>
+              <div class="text text-center">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+                dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+                nec, pellentesque eu.
+              </div>
+              <div class="btn">
+                <a href="#">jetzt registrieten!</a>
+              </div>
+              <div class="picture text-center">
+                <img src="img/registration/tea-time.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        {{> advertising-services }}
+      </section>
+    </main>
+
+    {{> footer }}
+    {{> copyright }}
+  </body>
+</html>

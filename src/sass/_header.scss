@@ -111,6 +111,7 @@ header {
         @extend .btn;
         width: 62px;
         background-color: rgba(139, 161, 6, 0.7);
+        font-family: 'FontAwesome';
         &:hover {
           color: #ff0;
         }

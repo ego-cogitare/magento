@@ -1,0 +1,88 @@
+.registration {
+  display: flex;
+  justify-content: space-between;
+  color: #707070;
+  padding-top: 38px;
+  padding-bottom: 100px;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  .heading-1 {
+    color: #000000;
+    padding-bottom: 25px;
+  }
+
+  .block {
+    width: 568px;
+    height: 414px;
+    padding: 40px 50px;
+    border: 1px solid #e1e1d2;
+    .row {
+      margin-bottom: 20px;
+    }
+    .text {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 24px;
+      span {
+        color: $brand-color;
+      }
+    }
+    .btn {
+      @extend .btn;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      font-weight: 800;
+      height: 37px;
+      line-height: 37px;
+    }
+    &.login-form {
+      form {
+        padding-top: 24px;
+        ::placeholder {
+          color: #afafaf;
+          font-weight: 600;
+        }
+        .remember-me {
+          padding: 10px 0;
+          #remember-me {
+            vertical-align: middle;
+          }
+        }
+        .btn {
+          background-color: $brand-color;
+          width: 100%;
+        }
+        .input {
+          @extend .input;
+          width: 100%;
+          font-weight: 600;
+        }
+      }
+    }
+
+    &.registration-form {
+      background: url('../img/registration/block-bg.png') repeat-x top left;
+      .btn {
+        background-color: #9a9a69;
+        width: 188px;
+        margin: 20px auto 0;
+        a:hover {
+          text-decoration: none;
+        }
+      }
+      .picture {
+        padding-top: 22px;
+      }
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
