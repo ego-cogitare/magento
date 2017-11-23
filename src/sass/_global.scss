@@ -67,6 +67,19 @@ body {
   border: 1px solid #e1e1d2;
 }
 
+.select {
+  background: transparent;
+  border: 1px solid #d2d2d2;
+  padding: 15px;
+  border-bottom-width: 2px;
+  outline: none;
+  color: #8b8b8b;
+  font-weight: 800;
+  border-radius: 3px;
+  font-family: 'Montserrat';
+  font-size: 0.9rem;
+}
+
 .text-center {
   text-align: center;
 }

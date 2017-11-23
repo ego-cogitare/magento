@@ -1,0 +1,22 @@
+.registration {
+  @extend .gray-border;
+  padding: 40px 50px;
+  margin: 38px 0 100px 0;
+
+  .columns {
+    display: flex;
+    justify-content: space-between;
+    .column {
+      width: 512px;
+      input[type="text"] {
+        width: 100%;
+      }
+    }
+  }
+
+  .btn-green {
+    margin: 0 auto;
+    display: block;
+    width: 672px;
+  }
+}
