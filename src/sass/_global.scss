@@ -171,12 +171,13 @@ body {
   box-shadow: rgb(153, 153, 153) 0px 2px 5px 0px;
   position: relative;
   background-color: $gray-color;
-
   i {
     font-weight: bold;
     text-decoration: italic;
   }
-
+  .text {
+    line-height: 44px;
+  }
   .close {
     position: absolute;
     top: 0;

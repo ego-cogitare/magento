@@ -23,7 +23,8 @@ $(document).ready(function() {
     slidesPerView: 1,
     pagination: '#home-slider-1 .swiper-pagination',
     paginationClickable: true,
-    loop: false,
+    autoplay: 3000,
+    loop: true,
     spaceBetween: 0,
     mousewheelControl: false,
     speed: 1000

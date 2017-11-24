@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head }}
+  <head>
+
+  <body>
+    <div class="holder">
+      {{> notification }}
+      {{> header }}
+      {{> menu }}
+    </div>
+
+    <main>
+      <section>
+        <div class="wrapper">
+          {{> payment-steps }}
+        </div>
+      </section>
+
+      <section>
+        <div class="wrapper">
+          <div class="cart-products">
+            <div class="heading">
+              <div>ARTIKEL</div>
+              <div>MENGE</div>
+              <div>PREIS</div>
+              <div>GESAMT</div>
+            </div>
+            <div class="product">
+              <div class="picture">
+                wefqwe
+              </div>
+              <div class="description">
+                <h2>eeee</h2>
+              </div>
+              <div class="count">
+                <select class="select">
+                  <option>Bitte Anrede wählen...</option>
+                </select>
+              </div>
+              <div class="price">
+                asdfasdf
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        {{> advertising-services }}
+      </section>
+    </main>
+
+    {{> footer }}
+    {{> copyright }}
+  </body>
+</html>
