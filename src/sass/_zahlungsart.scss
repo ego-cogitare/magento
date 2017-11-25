@@ -1,0 +1,22 @@
+.order-management {
+  margin-top: 68px;
+  .row {
+    @extend .gray-border;
+    color: $text-default;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    height: 173px;
+    .form-controll {
+      width: 34px;
+      height: 100%;
+    }
+    .description {
+      width: 860px;
+      height: 100%;
+      .heading-2 {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
