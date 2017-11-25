@@ -15,8 +15,12 @@
         <span>Schwarztee -aromatisiert-</span>
       </div>
     </div>
-    <div class="count">
-      <input type="number" class="input-number" value="2" min="0" max="99" />
+    <div class="count fw-500">
+      {{#if managable}}
+        <input type="number" class="input-number" value="2" min="0" max="99" />
+      {{else}}
+        2
+      {{/if}}
     </div>
     <div class="price">
       4.90€
@@ -37,8 +41,12 @@
         <span>Schwarztee -entkoffeiniert-</span>
       </div>
     </div>
-    <div class="count">
-      <input type="number" class="input-number" value="1" min="0" max="99" />
+    <div class="count fw-500">
+      {{#if managable}}
+        <input type="number" class="input-number" value="1" min="0" max="99" />
+      {{else}}
+        1
+      {{/if}}
     </div>
     <div class="price">
       7.90€
