@@ -42,16 +42,19 @@ $(document).ready(function() {
     prevButton: '#home-slider-2 .button-prev'
   });
 
-  new Swiper('.category-slider', {
-    direction: 'horizontal',
-    slidesPerView: 1,
-    //pagination: '#home-slider-1 .swiper-pagination',
-    paginationClickable: true,
-    autoplay: 3000,
-    loop: true,
-    spaceBetween: 0,
-    mousewheelControl: false,
-    speed: 1000
+  $('.category-slider').each(function() {
+    new Swiper($(this), {
+      direction: 'horizontal',
+      slidesPerView: 1,
+      nextButton: $(this).find('.button-next'),
+      prevButton: $(this).find('.button-prev'),
+      paginationClickable: true,
+      // autoplay: 3000,
+      loop: true,
+      spaceBetween: 0,
+      mousewheelControl: false,
+      speed: 1000
+    });
   });
 
   $(window).bind('scroll', function(e) {

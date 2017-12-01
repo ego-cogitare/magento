@@ -57,6 +57,26 @@
           & > ul {
             list-style-type: none;
           }
+          .navigate {
+            background-color: #ffffff;
+            color: #cccccc;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            width: 30px;
+            left: 1px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 1.3rem;
+            cursor: pointer;
+            box-shadow: #999999 0px 1px 4px 0px;
+            &.button-next {
+              left: auto;
+              right: 1px;
+            }
+          }
         }
         .label {
           top: 6px;
