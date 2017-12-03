@@ -44,12 +44,28 @@ body {
   background: none !important;
 }
 
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.w0 {
+  width: 0 !important;
+}
+
 .w50p {
   width: 50% !important;
 }
 
 .w100p {
   width: 100% !important;
+}
+
+.h0 {
+  height: 0;
 }
 
 .h100p {

@@ -49,9 +49,6 @@
       .product {
         width: 266px;
         margin-bottom: 60px;
-        &:last-child {
-          margin-right: auto;
-        }
         .category-slider {
           height: 190px;
           & > ul {
@@ -95,6 +92,61 @@
         img {
           padding: 6px;
           background-color: #ffffff;
+        }
+      }
+    }
+    & > .pagination {
+      text-align: center;
+      .page {
+        display: inline-block;
+        background-color: $gray-color;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        color: #999999;
+        font-weight: 700;
+        margin-right: 6px;
+        &.active {
+          background-color: $brand-color;
+          color: #ffffff;
+        }
+        &.prev,
+        &.next {
+          @extend .gray-border;
+          line-height: 34px;
+          background: none;
+        }
+        &.prev {
+          margin-right: 20px;
+        }
+        &.next {
+          margin-left: 20px;
+        }
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+    }
+    .club-banner {
+      height: 240px;
+      margin-top: 60px;
+      .title {
+        font-size: 2.9rem;
+        margin-top: 25px;
+      }
+      .text {
+        font-size: 1.9rem;
+      }
+      .btn-green {
+        height: 34px;
+        font-size: 1.0rem;
+        width: auto;
+        font-weight: 800;
+        margin-top: 26px;
+        a {
+          color: inherit;
+          text-decoration: none;
         }
       }
     }
