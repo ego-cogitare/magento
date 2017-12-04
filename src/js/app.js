@@ -57,6 +57,23 @@ $(document).ready(function() {
     });
   });
 
+  $('#price-slider').jRange({
+    from: 0,
+    to: 70,
+    step: 1,
+    // scale: [0, 25, 50, 75, 100],
+    scale: [],
+    format: '%s',
+    width: 'calc(100% - 5px)',
+    showLabels: false,
+    isRange : true,
+    onstatechange: function(value) {
+      var values = value.split(',');
+      $('#price-slider-from').text(values[0]);
+      $('#price-slider-to').text(values[1]);
+    }
+  });
+
   $(window).bind('scroll', function(e) {
     $(window).scrollTop() > 50
       ? $('body').addClass('small')

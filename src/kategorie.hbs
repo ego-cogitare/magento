@@ -10,128 +10,115 @@
       {{> header }}
       {{> menu }}
     </div>
-
     <main>
       <section>
         <div class="wrapper category clear">
           <nav class="sitebar left">
+            <div class="title">Kategorien: <span>Tee</span></div>
             <ul class="menu">
-              <li class="menu-item icon-menu">
-                <span>Kategorie Wählen...</span>
-              </li>
-              <li class="menu-item icon-new">
-                <a href="#">Neue Produkte</a>
+              <li class="menu-item icon-play">
+                <a href="#">Schwarztee</a>
                 <ul class="submenu">
                   <li class="submenu-item">
-                    <a href="#">- Kategorie Unterlink</a>
+                    <a href="#">- Schwarz -aromatisiert-</a>
                   </li>
                   <li class="submenu-item">
-                    <a href="#">- Kategorie Unterlink</a>
+                    <a href="#">- Schwarz -entkoffeiniert-</a>
                   </li>
                   <li class="submenu-item">
-                    <a href="#">- Unterlink der Kategorie</a>
+                    <a href="#">- Darjeeling</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">- Assam</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">- Ceylon</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">- China</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">- Andere Länder & Gebiete</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">- Ostfriesen & Blatt-Mischung</a>
                   </li>
                 </ul>
               </li>
-              <li class="menu-item icon-percent">
-                <a href="#">Angebote</a>
-                <ul class="submenu">
-                  <li class="submenu-item">
-                    <a href="#">- Kategorie Unterlink</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="#">- Kategorie Unterlink</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="#">- Unterlink der Kategorie</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="#">Tee</a>
-                <ul class="submenu">
-                  <li class="submenu-item">
-                    <a href="#">- Kategorie Unterlink</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="#">- Kategorie Unterlink</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="#">- Unterlink der Kategorie</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="#">Kaffee</a>
-                <ul class="submenu">
-                  <li class="submenu-item">
-                    <a href="#">- Kategorie Unterlink</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="#">- Kategorie Unterlink</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="#">- Unterlink der Kategorie</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="#">Geschenke</a>
-                <ul class="submenu">
-                  <li class="submenu-item">
-                    <a href="#">- Kategorie Unterlink</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="#">- Kategorie Unterlink</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="#">- Unterlink der Kategorie</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="#">Raritäten</a>
-                <ul class="submenu">
-                  <li class="submenu-item">
-                    <a href="#">- Kategorie Unterlink</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="#">- Kategorie Unterlink</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="#">- Unterlink der Kategorie</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="#">Wellness</a>
-                <ul class="submenu">
-                  <li class="submenu-item">
-                    <a href="#">- Kategorie Unterlink</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="#">- Kategorie Unterlink</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="#">- Unterlink der Kategorie</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="#">Zubehör</a>
-                <ul class="submenu">
-                  <li class="submenu-item">
-                    <a href="#">- Kategorie Unterlink</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="#">- Kategorie Unterlink</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="#">- Unterlink der Kategorie</a>
-                  </li>
-                </ul>
               </li>
             </ul>
+            <div class="filter-price">
+              <div class="title">Filter: <span>Preisspanne</span></div>
+              <form method="post" action="">
+                <input type="hidden" id="price-slider" class="slider-input" value="49" />
+                <div class="price-range clear">
+                  <div class="left">Preis: <span id="price-slider-from">0</span> - <span id="price-slider-to">49</span> <span>€</span></div>
+                  <button class="btn-green right">filtern</button>
+                </div>
+            </form>
+            </div>
+            <div class="filter-sort">
+              <div class="title">Filter: <span>Sortiren nach</span></div>
+              <ul class="filter-items">
+                <li class="filter-item icon-play">
+                  <a href="#" class="fw-800">beliebt</a>
+                </li>
+                <li class="filter-item icon-play">
+                  <a href="#">niedrigsten Preis zuerst</a>
+                </li>
+                <li class="filter-item icon-play">
+                  <a href="#">höchsten Preis zuerst</a>
+                </li>
+                <li class="filter-item icon-play">
+                  <a href="#">A-Z</a>
+                </li>
+                <li class="filter-item icon-play">
+                  <a href="#">Z-A</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tags text">
+              <div class="tag">
+                <a href="#">Tag Name Xyz</a>
+              </div>
+              <div class="tag">
+                <a href="#">Tag Name Xyz</a>
+              </div>
+              <div class="tag">
+                <a href="#">Tag Cloud- Name</a>
+              </div>
+              <div class="tag">
+                <a href="#">Tag Name</a>
+              </div>
+              <div class="tag">
+                <a href="#">Tag Name Xyz 12</a>
+              </div>
+              <div class="tag">
+                <a href="#">Tag Name XX</a>
+              </div>
+              <div class="tag">
+                <a href="#">Tag Name Xyz</a>
+              </div>
+              <div class="tag">
+                <a href="#">Tag Name Xyz</a>
+              </div>
+              <div class="tag">
+                <a href="#">Tag Cloud- Name</a>
+              </div>
+              <div class="tag">
+                <a href="#">Tag Name 12</a>
+              </div>
+            </div>
+            <div class="socials clear">
+              <span class="left">Teilen:</span>
+              <div class="icons left">
+                <a href="#" class="icon fa fa-facebook"></a>
+                <a href="#" class="icon fa fa-pinterest"></a>
+                <a href="#" class="icon fa fa-twitter"></a>
+                <a href="#" class="icon fa fa-google-plus"></a>
+                <a href="#" class="icon fa fa-instagram"></a>
+              </div>
+            </div>
           </nav>
           <div class="content right">
             <div class="controlls text clear">
