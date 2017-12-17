@@ -42,6 +42,18 @@ $(document).ready(function() {
     prevButton: '#home-slider-2 .button-prev'
   });
 
+  new Swiper('#home-slider-2', {
+    direction: 'horizontal',
+    slidesPerView: $('#home-slider-2').data('slides-per-view'),
+    spaceBetween: 30,
+    paginationClickable: true,
+    loop: false,
+    mousewheelControl: false,
+    speed: 1000,
+    nextButton: '#home-slider-2 .button-next',
+    prevButton: '#home-slider-2 .button-prev'
+  });
+
   $('.category-slider').each(function() {
     new Swiper($(this), {
       direction: 'horizontal',
