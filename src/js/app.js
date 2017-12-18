@@ -30,28 +30,57 @@ $(document).ready(function() {
     speed: 1000
   });
 
-  new Swiper('#home-slider-2', {
-    direction: 'horizontal',
-    slidesPerView: 4,
-    spaceBetween: 30,
-    paginationClickable: true,
-    loop: false,
-    mousewheelControl: false,
-    speed: 1000,
-    nextButton: '#home-slider-2 .button-next',
-    prevButton: '#home-slider-2 .button-prev'
-  });
+  // new Swiper('#home-slider-2', {
+  //   direction: 'horizontal',
+  //   slidesPerView: 4,
+  //   spaceBetween: 30,
+  //   paginationClickable: true,
+  //   loop: false,
+  //   mousewheelControl: false,
+  //   speed: 1000,
+  //   nextButton: '#home-slider-2 .button-next',
+  //   prevButton: '#home-slider-2 .button-prev'
+  // });
 
   new Swiper('#home-slider-2', {
     direction: 'horizontal',
     slidesPerView: $('#home-slider-2').data('slides-per-view'),
     spaceBetween: 30,
     paginationClickable: true,
-    loop: false,
+    loop: true,
     mousewheelControl: false,
     speed: 1000,
     nextButton: '#home-slider-2 .button-next',
     prevButton: '#home-slider-2 .button-prev'
+  });
+
+
+  var productSlider = new Swiper('#product-slider', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    spaceBetween: 0,
+    paginationClickable: true,
+    loop: true,
+    mousewheelControl: false,
+    speed: 500,
+    nextButton: '#product-slider .button-next',
+    prevButton: '#product-slider .button-prev'
+  });
+  new Swiper('#product-thumbs', {
+    direction: 'horizontal',
+    slidesPerView: 3,
+    spaceBetween: 15,
+    paginationClickable: true,
+    loop: false,
+    mousewheelControl: false,
+    speed: 500,
+    nextButton: '#product-thumbs ~ .button-next',
+    prevButton: '#product-thumbs ~ .button-prev',
+    onClick: function(swiper) {
+      // var clickedSlide = (swiper.clickedIndex % swiper.loopedSlides) + 1;
+      var clickedSlide = swiper.clickedIndex;
+      productSlider.slideTo(clickedSlide);
+    }
   });
 
   $('.category-slider').each(function() {
@@ -85,6 +114,19 @@ $(document).ready(function() {
       $('#price-slider-to').text(values[1]);
     }
   });
+
+  // Tabs
+  $('.tabs .tab A').on('click', function(e) {
+    e.preventDefault();
+
+    $('.tabs .tab').removeClass('active');
+    $(this).closest('.tab').addClass('active');
+    var blockId = $(this).attr('href');
+    $(this).closest('.tabs-wrapper').find('.tabs-content').hide(0, function() {
+      $(blockId).show(0);
+    });
+  });
+  $('.tabs .tab.active A').trigger('click');
 
   $(window).bind('scroll', function(e) {
     $(window).scrollTop() > 50
